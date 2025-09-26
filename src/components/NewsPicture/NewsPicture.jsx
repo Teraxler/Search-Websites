@@ -12,6 +12,8 @@ export default function NewsPicture(props) {
             src={enclosure?.link ?? noImage}
             alt={title}
             loading="lazy"
+            width={125}
+            height={125}
           />
         </a>
       </div>

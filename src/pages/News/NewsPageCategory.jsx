@@ -17,10 +17,11 @@ import categories from "../../data/newsCategories.json";
 
 export default function NewsByCategoryPage() {
   const { cat } = useParams();
-  const webFeeds = useFetchFeeds(rssFeedLinks[cat]);
+  const [webFeeds] = useFetchFeeds(rssFeedLinks[cat]);
   const [currentPage, setCurrentPage] = useState(1);
   const [currentPageFeeds, setCurrentPageFeeds] = useState([]);
   const [shuffledFeeds, setShuffledFeeds] = useState([]);
+  const [isContentLoaded, setIsContentLoaded] = useState(false);
 
   const categoryTitle = categories.newsCategories.find(
     (newsCategory) => newsCategory.name === cat
@@ -31,10 +32,12 @@ export default function NewsByCategoryPage() {
   useEffect(() => {
     setCurrentPageFeeds(() => paginateItems(webFeeds, currentPage, MAX_NEWS));
     setShuffledFeeds(() => shuffleArray(webFeeds, MAX_NEWS));
+    setIsContentLoaded(true);
   }, [webFeeds, currentPage]);
 
   function navigateHandler(newPage) {
     setCurrentPage(newPage);
+    setIsContentLoaded(false);
 
     window.scrollTo({
       top: 0,
@@ -48,7 +51,7 @@ export default function NewsByCategoryPage() {
       <div className="container mx-auto flex flex-col-reverse lg:flex-row gap-4 p-4">
         <main className="flex flex-col gap-y-4 flex-2">
           <NewsSection title={categoryTitle}>
-            {currentPageFeeds.length
+            {isContentLoaded && currentPageFeeds.length
               ? currentPageFeeds.map((feed) => (
                   <NewsItem key={feed.guid} {...feed} />
                 ))
@@ -59,7 +62,7 @@ export default function NewsByCategoryPage() {
         </main>
         <aside className="flex flex-col gap-4 flex-1">
           <NewsSection title={categoryTitle}>
-            {shuffledFeeds.length
+            {isContentLoaded && shuffledFeeds.length
               ? shuffledFeeds.map((feed) => (
                   <NewsTitle key={feed.guid} {...feed} />
                 ))

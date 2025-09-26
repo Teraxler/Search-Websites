@@ -15,6 +15,8 @@ export default function NewsItemMini(props) {
           >
             <img
               loading="lazy"
+              width={80}
+              height={46}
               className="w-full max-h-full object-scale-down"
               src={enclosure?.link ?? noImage}
               // src={thumbnail ? thumbnail : enclosure.link}

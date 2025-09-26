@@ -19,11 +19,11 @@ import SkeletonNewsTitle from "../../components/NewsTitle/SkeletonNewsTitle";
 import Skeleton from "@mui/material/Skeleton";
 
 export default function NewsPage() {
-  const politicalFeeds = useFetchFeeds(rssLinks.political);
-  const economyFeeds = useFetchFeeds(rssLinks.economy);
-  const healthFeeds = useFetchFeeds(rssLinks.health);
-  const sportFeeds = useFetchFeeds(rssLinks.sports);
-  const latestFeeds = useFetchFeeds(rssLinks.latest);
+  const [politicalFeeds, isPoliticalFeedsLoaded, errorPoliticalFeeds] = useFetchFeeds(rssLinks.political);
+  const [economyFeeds, isEconomyFeedsLoaded, errorEconomyFeeds] = useFetchFeeds(rssLinks.economy);
+  const [healthFeeds, isHealthFeedsLoaded, errorHealthFeeds] = useFetchFeeds(rssLinks.health);
+  const [sportFeeds, isSportFeedsLoaded, errorSportFeeds] = useFetchFeeds(rssLinks.sports);
+  const [latestFeeds, isLatestFeedsLoaded, errorLatestFeeds] = useFetchFeeds(rssLinks.latest);
 
   const shuffledPoliticalFeeds = useMemo(
     () => shuffleArray(politicalFeeds).slice(0, 10),
@@ -45,13 +45,6 @@ export default function NewsPage() {
     () => shuffleArray(sportFeeds).slice(0, 10),
     [sportFeeds]
   );
-  
-  // console.log(
-  //   "🚀 ~ NewsPage ~ shuffledPoliticalFeeds:",
-  //   shuffledPoliticalFeeds
-  // );
-
-  document.body.style.background = "#f6f6f6";
 
   return (
     <>
@@ -60,7 +53,7 @@ export default function NewsPage() {
       <div className="container mx-auto flex flex-col lg:flex-row gap-4 p-4">
         <main className="flex flex-col gap-y-4 flex-2">
           <NewsSection title={"آخرین خبر‌ها"}>
-            {shuffledLatestFeeds.length
+            {isLatestFeedsLoaded && shuffledLatestFeeds.length
               ? shuffledLatestFeeds.map((feed) => (
                   <NewsTitle key={feed.guid} {...feed} showAuthor showPubDate />
                 ))
@@ -69,7 +62,7 @@ export default function NewsPage() {
                 ))}
           </NewsSection>
           <NewsSection title={"سیاسی"}>
-            {shuffledPoliticalFeeds.length
+            {isPoliticalFeedsLoaded && shuffledPoliticalFeeds.length
               ? shuffleArray(shuffledPoliticalFeeds).map((feed) => (
                   <NewsItem key={feed.guid} {...feed} />
                 ))
@@ -79,7 +72,7 @@ export default function NewsPage() {
           </NewsSection>
           <NewsSection title={"اقتصادی"}>
             <div className="flex flex-wrap gap-y-4 mt-4">
-              {shuffledEconomyFeeds.length
+              {isEconomyFeedsLoaded&& shuffledEconomyFeeds.length
                 ? shuffleArray(shuffledEconomyFeeds).map((feed) => (
                     <NewsPicture key={feed.guid} {...feed} />
                   ))
@@ -99,7 +92,7 @@ export default function NewsPage() {
           </NewsSection>
           <NewsSection title={"ورزشی"}>
             <div className="flex flex-wrap">
-              {shuffledSportFeeds.length
+              {isSportFeedsLoaded &&shuffledSportFeeds.length
                 ? shuffleArray(shuffledSportFeeds).map((feed) => (
                     <MiniNewsItem key={feed.guid} {...feed} />
                   ))
@@ -120,7 +113,7 @@ export default function NewsPage() {
         </main>
         <aside className="flex flex-col gap-4 flex-1">
           <NewsSection title={"سلامت"}>
-            {shuffledHealthFeeds.length
+            {isHealthFeedsLoaded && shuffledHealthFeeds.length
               ? shuffleArray(shuffledHealthFeeds).map((feed) => (
                   <NewsTitle key={feed.guid} {...feed} />
                 ))

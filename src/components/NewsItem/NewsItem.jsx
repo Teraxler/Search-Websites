@@ -15,6 +15,8 @@ export default function NewsItem(props) {
         >
           <img
             loading="lazy"
+            width={90}
+            height={90}
             className="w-full object-scale-down"
             src={enclosure?.link ?? noImage}
             // src={thumbnail ? thumbnail : enclosure.link}
@@ -35,7 +37,7 @@ export default function NewsItem(props) {
             {pubDate && calcRelativeDateTimeDifference(pubDate)}
           </span>
         </div>
-        <p className="text-[12.22px] my-1.5 line-clamp-3">{description}</p>
+        <p className="text-[12.22px] my-1.5 line-clamp-2">{description}</p>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ export default function SkeletonMiniNewsItem() {
           <Skeleton variant="rectangular" height={46} />
         </div>
         <div className="flex-1">
-          <Skeleton height={40} />
+          <Skeleton height={22.5} />
           <div className="flex gap-x-1.25 mt-1">
             <Skeleton width={56} height={16} />
             <Skeleton width={60} height={16} />

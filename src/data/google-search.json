@@ -1,0 +1,458 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - samsung",
+        "totalResults": "1960000000",
+        "searchTerms": "samsung",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "active",
+        "cx": "478184bb5926e4d44",
+        "gl": "ir"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - samsung",
+        "totalResults": "1960000000",
+        "searchTerms": "samsung",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "active",
+        "cx": "478184bb5926e4d44",
+        "gl": "ir"
+      }
+    ]
+  },
+  "context": {
+    "title": "Search Engine Parsijoo"
+  },
+  "searchInformation": {
+    "searchTime": 0.254766,
+    "formattedSearchTime": "0.25",
+    "totalResults": "1960000000",
+    "formattedTotalResults": "1,960,000,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Samsung US | Mobile | TV | Home Electronics | Home Appliances ...",
+      "htmlTitle": "\u003cb\u003eSamsung\u003c/b\u003e US | Mobile | TV | Home Electronics | Home Appliances ...",
+      "link": "https://www.samsung.com/us/",
+      "displayLink": "www.samsung.com",
+      "snippet": "Discover the latest in electronic & smart appliance technology with Samsung. Find the next big thing from smartphones & tablets to laptops & tvs & more.",
+      "htmlSnippet": "Discover the latest in electronic &amp; smart appliance technology with \u003cb\u003eSamsung\u003c/b\u003e. Find the next big thing from smartphones &amp; tablets to laptops &amp; tvs &amp; more.",
+      "formattedUrl": "https://www.samsung.com/us/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003esamsung\u003c/b\u003e.com/us/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4VJhqk1vM6cRUUDNv9CXocShAKBhr3dYpsKMDzwvNgWPg1K03xRE8E38&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "p:domain_verify": "43de77e548941cb72905cda5a6974629",
+            "date": "2025-09-24",
+            "og:image": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png",
+            "image": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png",
+            "twitter:card": "Summary",
+            "twitter:title": "Mobile | TV | Home Electronics | Home Appliances | Samsung US | Samsung US",
+            "og:type": "website",
+            "og:site_name": "Samsung",
+            "twitter:url": "https://www.samsung.com/us/",
+            "og:title": "Mobile | TV | Home Electronics | Home Appliances | Samsung US | Samsung US",
+            "title": "Samsung US | Mobile | TV | Home Electronics | Home Appliances | Samsung US",
+            "twitter:creator": "@SamsungUSA",
+            "og:description": "Discover the latest in electronic & smart appliance technology with Samsung. Find the next big thing from smartphones & tablets to laptops & tvs & more.",
+            "twitter:image": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png",
+            "url": "https://www.samsung.com/us/",
+            "sitecode": "us",
+            "twitter:site": "@SamsungUSA",
+            "viewport": "width=device-width,initial-scale=1.0,minimum-scale=1.0",
+            "twitter:description": "Discover the latest in electronic & smart appliance technology with Samsung. Find the next big thing from smartphones & tablets to laptops & tvs & more.",
+            "og:locale": "en",
+            "name": "Samsung",
+            "og:url": "https://www.samsung.com/us/",
+            "og:country-name": "us"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Samsung Malaysia | Smartphones, TVs, Home Appliances",
+      "htmlTitle": "\u003cb\u003eSamsung\u003c/b\u003e Malaysia | Smartphones, TVs, Home Appliances",
+      "link": "https://www.samsung.com/my/",
+      "displayLink": "www.samsung.com",
+      "snippet": "Explore the latest smartphones, wearables, tablets, TVs, digital appliances, and more at Samsung online store Malaysia, the official store for Samsung ...",
+      "htmlSnippet": "Explore the latest smartphones, wearables, tablets, TVs, digital appliances, and more at \u003cb\u003eSamsung\u003c/b\u003e online store Malaysia, the official store for \u003cb\u003eSamsung\u003c/b\u003e&nbsp;...",
+      "formattedUrl": "https://www.samsung.com/my/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003esamsung\u003c/b\u003e.com/my/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4VJhqk1vM6cRUUDNv9CXocShAKBhr3dYpsKMDzwvNgWPg1K03xRE8E38&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "date": "2025-09-26",
+            "og:image": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png",
+            "image": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png",
+            "twitter:card": "Summary",
+            "twitter:title": "Smartphones, TVs, Home Appliances | Samsung Malaysia",
+            "og:type": "website",
+            "og:site_name": "Samsung my",
+            "twitter:url": "https://www.samsung.com/my/",
+            "og:title": "Smartphones, TVs, Home Appliances | Samsung Malaysia",
+            "title": "Samsung Malaysia | Smartphones, TVs, Home Appliances",
+            "twitter:creator": "@SamsungMalaysia",
+            "og:description": "Explore the latest smartphones, wearables, tablets, TVs, digital appliances, and more at Samsung online store Malaysia, the official store for Samsung products.",
+            "twitter:image": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png",
+            "url": "https://www.samsung.com/my/",
+            "sitecode": "my",
+            "twitter:site": "@SamsungMalaysia",
+            "viewport": "width=device-width,initial-scale=1.0,minimum-scale=1.0",
+            "twitter:description": "Explore the latest smartphones, wearables, tablets, TVs, digital appliances, and more at Samsung online store Malaysia, the official store for Samsung products.",
+            "og:locale": "en-MY",
+            "name": "Samsung my",
+            "og:url": "https://www.samsung.com/my/",
+            "og:country-name": "my"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Samsung UK | Mobile | Home Electronics | Home Appliances | TV",
+      "htmlTitle": "\u003cb\u003eSamsung\u003c/b\u003e UK | Mobile | Home Electronics | Home Appliances | TV",
+      "link": "https://www.samsung.com/uk/",
+      "displayLink": "www.samsung.com",
+      "snippet": "Welcome to Samsung UK. Discover a wide range of home electronics with cutting-edge technology including TVs, smartphones, tablets, home appliances & more!",
+      "htmlSnippet": "Welcome to \u003cb\u003eSamsung\u003c/b\u003e UK. Discover a wide range of home electronics with cutting-edge technology including TVs, smartphones, tablets, home appliances &amp; more!",
+      "formattedUrl": "https://www.samsung.com/uk/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003esamsung\u003c/b\u003e.com/uk/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4VJhqk1vM6cRUUDNv9CXocShAKBhr3dYpsKMDzwvNgWPg1K03xRE8E38&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "date": "2025-09-19",
+            "og:image": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png",
+            "image": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png",
+            "twitter:card": "Summary",
+            "twitter:title": "Samsung UK | Mobile | Home Electronics | Home Appliances | TV",
+            "og:type": "website",
+            "og:site_name": "Samsung uk",
+            "twitter:url": "https://www.samsung.com/uk/",
+            "og:title": "Samsung UK | Mobile | Home Electronics | Home Appliances | TV",
+            "title": "Samsung UK | Mobile | Home Electronics | Home Appliances | TV",
+            "twitter:creator": "@SamsungUK",
+            "og:description": "Welcome to Samsung UK. Discover a wide range of home electronics with cutting-edge technology including TVs, smartphones, tablets, home appliances & more!",
+            "twitter:image": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png",
+            "url": "https://www.samsung.com/uk/",
+            "sitecode": "uk",
+            "twitter:site": "@SamsungUK",
+            "viewport": "width=device-width,initial-scale=1.0,minimum-scale=1.0",
+            "twitter:description": "Welcome to Samsung UK. Discover a wide range of home electronics with cutting-edge technology including TVs, smartphones, tablets, home appliances & more!",
+            "og:locale": "en-GB",
+            "name": "Samsung uk",
+            "og:url": "https://www.samsung.com/uk/",
+            "og:country-name": "uk"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Samsung Global Newsroom – All the latest news, key facts and ...",
+      "htmlTitle": "\u003cb\u003eSamsung\u003c/b\u003e Global Newsroom – All the latest news, key facts and ...",
+      "link": "https://news.samsung.com/global/",
+      "displayLink": "news.samsung.com",
+      "snippet": "The official communications channel of Samsung Electronics, providing all the latest stories regarding the company's products, people and businesses.",
+      "htmlSnippet": "The official communications channel of \u003cb\u003eSamsung\u003c/b\u003e Electronics, providing all the latest stories regarding the company&#39;s products, people and businesses.",
+      "formattedUrl": "https://news.samsung.com/global/",
+      "htmlFormattedUrl": "https://news.\u003cb\u003esamsung\u003c/b\u003e.com/global/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA8t7Hfftwz1tap9kZr3db6nLy-eQ0k2XJ1nI9f6IQZKJtOjfEkk9VWfM&s",
+            "width": "299",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://news.samsung.com/global/wp-content/themes/btr_newsroom/images/default_image.png",
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
+            "og:title": "Samsung Global Newsroom - All the latest news, key facts and inspiring stories about Samsung Electronics.",
+            "og:url": "https://news.samsung.com/global",
+            "og:description": "The official communications channel of Samsung Electronics, providing all the latest stories regarding the company's products, people and businesses.",
+            "format-detection": "telephone=no"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://news.samsung.com/global/wp-content/themes/btr_newsroom/images/default_image.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Samsung - Wikipedia",
+      "htmlTitle": "\u003cb\u003eSamsung\u003c/b\u003e - Wikipedia",
+      "link": "https://en.wikipedia.org/wiki/Samsung",
+      "displayLink": "en.wikipedia.org",
+      "snippet": "a South Korean multinational manufacturing conglomerate headquartered in the Samsung Town office complex in Seoul.",
+      "htmlSnippet": "a South Korean multinational manufacturing conglomerate headquartered in the \u003cb\u003eSamsung\u003c/b\u003e Town office complex in Seoul.",
+      "formattedUrl": "https://en.wikipedia.org/wiki/Samsung",
+      "htmlFormattedUrl": "https://en.wikipedia.org/wiki/\u003cb\u003eSamsung\u003c/b\u003e",
+      "pagemap": {
+        "hcard": [
+          {
+            "url_text": "samsung.com",
+            "bday": "1938-03-01",
+            "fn": "Samsung Group",
+            "logo": "Samsung Town, the company's headquarters in Seoul",
+            "label": "Samsung Town, Seoul, South Korea",
+            "category": "Private",
+            "url": "samsung.com"
+          }
+        ],
+        "metatags": [
+          {
+            "referrer": "origin",
+            "og:image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Samsung_headquarters.jpg/1200px-Samsung_headquarters.jpg",
+            "theme-color": "#eaecf0",
+            "og:image:width": "1200",
+            "og:type": "website",
+            "viewport": "width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0",
+            "og:title": "Samsung - Wikipedia",
+            "og:image:height": "951",
+            "format-detection": "telephone=no"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Samsung Semiconductor Global Official Website | Samsung ...",
+      "htmlTitle": "\u003cb\u003eSamsung\u003c/b\u003e Semiconductor Global Official Website | \u003cb\u003eSamsung\u003c/b\u003e ...",
+      "link": "https://semiconductor.samsung.com/",
+      "displayLink": "semiconductor.samsung.com",
+      "snippet": "Samsung provides innovative semiconductor solutions, including DRAM, SSD, processors, image sensors with a wide-ranging portfolio of trending technologies.",
+      "htmlSnippet": "\u003cb\u003eSamsung\u003c/b\u003e provides innovative semiconductor solutions, including DRAM, SSD, processors, image sensors with a wide-ranging portfolio of trending technologies.",
+      "formattedUrl": "https://semiconductor.samsung.com/",
+      "htmlFormattedUrl": "https://semiconductor.\u003cb\u003esamsung\u003c/b\u003e.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7892woXjUh9bSE4zf26jQjQzasC-VzzP42VhOuSuICP4aY_hzjZsOGt8&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "template": "home-page",
+            "og:image": "https://cdn.samsung.com/etc/designs/smg/global/imgs/logo-square-letter.png",
+            "og:type": "website",
+            "twitter:card": "summary",
+            "og:site_name": "Samsung Semiconductor Global",
+            "og:title": "Samsung Semiconductor Global Official Website | Samsung Semiconductor Global",
+            "og:description": "Samsung provides innovative semiconductor solutions, including DRAM, SSD, processors, image sensors with a wide-ranging portfolio of trending technologies.",
+            "contentinfo": "others",
+            "sitecode": "global",
+            "baidu-site-verification": "codeva-718Uxcn7Di",
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover",
+            "consumerproductyn": "N",
+            "og:url": "https://semiconductor.samsung.com",
+            "datepublished": "2025-09-26T01:50:22.000+09:00",
+            "format-detection": "telephone=no"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://cdn.samsung.com/etc/designs/smg/global/imgs/logo-square-letter.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Samsung Li-Ion Battery & Renewable Energy | Samsung SDI Official ...",
+      "htmlTitle": "\u003cb\u003eSamsung\u003c/b\u003e Li-Ion Battery &amp; Renewable Energy | \u003cb\u003eSamsung\u003c/b\u003e SDI Official ...",
+      "link": "https://www.samsungsdi.com/",
+      "displayLink": "www.samsungsdi.com",
+      "snippet": "Since 1970, Samsung SDI has been creating innovative renewable energy and energy storage system with cutting-edge technology that is being experienced by ...",
+      "htmlSnippet": "Since 1970, \u003cb\u003eSamsung\u003c/b\u003e SDI has been creating innovative renewable energy and energy storage system with cutting-edge technology that is being experienced by&nbsp;...",
+      "formattedUrl": "https://www.samsungsdi.com/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003esamsung\u003c/b\u003esdi.com/",
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Tool & Software Download | Samsung Semiconductor Global",
+      "htmlTitle": "Tool &amp; Software Download | \u003cb\u003eSamsung\u003c/b\u003e Semiconductor Global",
+      "link": "https://semiconductor.samsung.com/consumer-storage/support/tools/",
+      "displayLink": "semiconductor.samsung.com",
+      "snippet": "Samsung Magician Software is designed to work with all Samsung memory products including internal SSDs, portable SSDs, memory cards and USB flash drives.",
+      "htmlSnippet": "\u003cb\u003eSamsung\u003c/b\u003e Magician Software is designed to work with all \u003cb\u003eSamsung\u003c/b\u003e memory products including internal SSDs, portable SSDs, memory cards and USB flash drives.",
+      "formattedUrl": "https://semiconductor.samsung.com/consumer-storage/support/tools/",
+      "htmlFormattedUrl": "https://semiconductor.\u003cb\u003esamsung\u003c/b\u003e.com/consumer-storage/support/tools/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7892woXjUh9bSE4zf26jQjQzasC-VzzP42VhOuSuICP4aY_hzjZsOGt8&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "template": "ssd-static-contents-page",
+            "og:image": "https://cdn.samsung.com/etc/designs/smg/global/imgs/logo-square-letter.png",
+            "og:type": "website",
+            "twitter:card": "summary",
+            "og:site_name": "Samsung Semiconductor Global",
+            "og:title": "Tool & Software Download | Samsung Semiconductor Global",
+            "og:description": "Download various software related to your product, including Samsung Magician, designed for use with Samsung's memory products, and find related information.",
+            "contentinfo": "others",
+            "sitecode": "global",
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover",
+            "consumerproductyn": "N",
+            "og:url": "https://semiconductor.samsung.com/consumer-storage/support/tools",
+            "datepublished": "2025-09-18T09:49:15.000+09:00",
+            "format-detection": "telephone=no"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://cdn.samsung.com/etc/designs/smg/global/imgs/logo-square-letter.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "SAMSUNG ELECTRO-MECHANICS | Mobile",
+      "htmlTitle": "\u003cb\u003eSAMSUNG\u003c/b\u003e ELECTRO-MECHANICS | Mobile",
+      "link": "https://www.samsungsem.com/",
+      "displayLink": "www.samsungsem.com",
+      "snippet": "Introduction to Samsung Electro-Mechanics package substrate. Watch video. Mass production of the industry's first thin-film coupled power inductor.",
+      "htmlSnippet": "Introduction to \u003cb\u003eSamsung\u003c/b\u003e Electro-Mechanics package substrate. Watch video. Mass production of the industry&#39;s first thin-film coupled power inductor.",
+      "formattedUrl": "https://www.samsungsem.com/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003esamsung\u003c/b\u003esem.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbGmuf-wtjdEpgInijiJBzYJwkUlCN5i3n8-kiF-nvf04bO4ZOeW5GfCvV&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://m.samsungsem.com/resources/images/global/common/og_img.jpg",
+            "og:type": "website",
+            "viewport": "width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi",
+            "og:title": "Samsung Electro-Mechanics",
+            "og:url": "https://m.samsungsem.com/global/index.do",
+            "og:description": "We are Samsung Electro-Mechanics, an integrated parts manufacturer.",
+            "format-detection": "telephone=no"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://m.samsungsem.com/resources/images/global/common/og_img.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Samsung Cloud",
+      "htmlTitle": "\u003cb\u003eSamsung\u003c/b\u003e Cloud",
+      "link": "https://support.samsungcloud.com/",
+      "displayLink": "support.samsungcloud.com",
+      "snippet": "See what's synced and backed up across your Samsung devices. Samsung Cloud is optimised for Chrome on Windows.",
+      "htmlSnippet": "See what&#39;s synced and backed up across your \u003cb\u003eSamsung\u003c/b\u003e devices. \u003cb\u003eSamsung\u003c/b\u003e Cloud is optimised for Chrome on Windows.",
+      "formattedUrl": "https://support.samsungcloud.com/",
+      "htmlFormattedUrl": "https://support.\u003cb\u003esamsung\u003c/b\u003ecloud.com/",
+      "pagemap": {
+        "metatags": [
+          {
+            "application-name": "Samsung Cloud",
+            "og:image": "/assets/icons/logo-192x192.png",
+            "msapplication-config": "/img/icon/browserconfig.xml",
+            "twitter:card": "Summary",
+            "twitter:title": "Samsung Cloud",
+            "og:image:width": "192",
+            "og:type": "website",
+            "twitter:url": "/",
+            "og:title": "Samsung Cloud",
+            "apple-mobile-web-app-title": "Samsung Cloud",
+            "og:image:height": "192",
+            "og:image:type": "image/png",
+            "title": "Samsung Cloud",
+            "og:description": "Samsung Cloud is an online storage space for all your stuff. You can use it to sync apps, back up devices, as well as store photos, videos, and more.",
+            "twitter:image": "/assets/icons/logo-192x192.png",
+            "apple-mobile-web-app-status-bar-style": "#72B5E4",
+            "viewport": "width=device-width,initial-scale=1,maximum-scale=1,shrink-to-fit=no",
+            "twitter:description": "Samsung Cloud is an online storage space for all your stuff. You can use it to sync apps, back up devices, as well as store photos, videos, and more.",
+            "apple-mobile-web-app-capable": "yes",
+            "mobile-web-app-capable": "yes",
+            "og:url": "/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "/assets/icons/logo-192x192.png"
+          }
+        ]
+      }
+    }
+  ]
+}

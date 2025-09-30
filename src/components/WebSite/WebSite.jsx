@@ -2,7 +2,7 @@ import { HiOutlineDotsVertical } from "react-icons/hi";
 import SiteLink from "./SiteLink";
 
 export default function WebSite(props) {
-  const { title, link, snippet, date, sitelinks } = props;
+  const { title, link, snippet, date, sitelinks, displayLink } = props;
 
   return (
     <div className="max-w-full w-162.5">
@@ -15,7 +15,7 @@ export default function WebSite(props) {
             {title}
           </span>
           <cite className="max-w-full text-xs text-[#4d5156] truncate">
-            {link}
+            {displayLink}
           </cite>
         </a>
         <div className="flex items-center mt-auto size-6">

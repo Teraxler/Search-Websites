@@ -1,45 +1,37 @@
-
 export default function ImageGalery(props) {
-  const {
-    position,
-    thumbnailWidth,
-    thumbnailHeight,
-    thumbnailUrl,
-    googleUrl,
-    title,
-    link,
-    source,
-  } = props;
+  const { title, link, displayLink, pagemap } = props;
 
-  const aspectRatio = thumbnailWidth / thumbnailHeight;
+  const thumbnail = pagemap?.cse_thumbnail?.[0];
+  if (thumbnail == null) return null;
+
+  const aspectRatio = thumbnail?.width / thumbnail?.height;
   const dynamicWidth = aspectRatio * 180;
 
   return (
     <div
-      key={position}
       className="flex grow shrink"
       style={{
-        maxWidth: thumbnailWidth,
-        flexBasis: dynamicWidth,
+        maxWidth: thumbnail.width + "px",
+        flexBasis: dynamicWidth + "px",
       }}
     >
       <div className="hover:*:first:shadow-[0_2px_12px_0_rgba(0,0,0,.3)] w-full">
         <div className="rounded-xl bg-[#f7f7f7] overflow-hidden transition-shadow w-full h-45">
-          <a className="flex items-center w-full h-full" href={googleUrl}>
+          <a className="flex items-center w-full h-full" href={link}>
             <img
               loading="lazy"
               className="object-cover object-top w-full h-full"
-              src={thumbnailUrl}
+              src={thumbnail.src}
               alt={title}
-              width={thumbnailWidth}
-              height={thumbnailHeight}
-              style={{ maxHeight: thumbnailHeight }}
+              width={thumbnail.width}
+              height={thumbnail.height}
+              style={{ maxHeight: thumbnail.height + "px" }}
             />
           </a>
         </div>
         <div className="mt-2 mx-1 mb-0.5">
           <a href={link} className="hover:*:first:underline">
-            <span className="text-xs text-davy-grey">{source}</span>
+            <span className="text-xs text-davy-grey">{displayLink}</span>
             <p className="text-sm text-[#474747] line-clamp-1">{title}</p>
           </a>
         </div>

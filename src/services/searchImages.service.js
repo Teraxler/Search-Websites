@@ -1,4 +1,4 @@
-import { API_KEY, API_URL, MAX_NUMBER_OF_IMAGES } from "./constant";
+import { API_KEY_2, API_URL_2, MAX_NUMBER_OF_IMAGES } from "./constant";
 
 async function getSearchImages(query, page = 1) {
   try {
@@ -8,7 +8,7 @@ async function getSearchImages(query, page = 1) {
     };
 
     const response = await fetch(
-      `${API_URL}/images?q=${query}&gl=ir&hl=fa&num=${MAX_NUMBER_OF_IMAGES}&page=${page}&apiKey=${API_KEY}`,
+      `${API_URL_2}/images?q=${query}&gl=ir&hl=fa&num=${MAX_NUMBER_OF_IMAGES}&page=${page}&apiKey=${API_KEY_2}`,
       requestOptions
     );
     const result = await response.json();

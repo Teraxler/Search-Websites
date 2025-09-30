@@ -1,4 +1,4 @@
-import { API_KEY, API_URL } from "./constant";
+import { API_KEY_2, API_URL_2 } from "./constant";
 
 async function getAutoCompeleteSuggestions(query) {
   try {
@@ -8,7 +8,7 @@ async function getAutoCompeleteSuggestions(query) {
     };
 
     const response = await fetch(
-      `${API_URL}/autocomplete?q=${query}&gl=ir&apiKey=${API_KEY}`,
+      `${API_URL_2}/autocomplete?q=${query}&gl=ir&apiKey=${API_KEY_2}`,
       requestOptions
     );
     const result = await response.json();

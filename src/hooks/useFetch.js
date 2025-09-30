@@ -1,8 +1,8 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function useFetch(url) {
   const [data, setData] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoaded, setIsLoaded] = useState(false);
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -10,9 +10,7 @@ export default function useFetch(url) {
       try {
         const response = await fetch(url);
 
-        if (!response.ok) {
-          throw new Error("Network Error");
-        }
+        if (!response.ok) throw new Error("Network Error");
 
         const result = await response.json();
 
@@ -22,13 +20,13 @@ export default function useFetch(url) {
         setError(error);
         throw new Error("Failed to fetch:", { cause: error });
       } finally {
-        setIsLoading(false);
+        setIsLoaded(true);
       }
     }
 
-    setIsLoading(true);
+    setIsLoaded(false);
     fetchData();
   }, [url]);
 
-  return [data, isLoading, error];
+  return [data, isLoaded, error];
 }

@@ -9,7 +9,7 @@ export default function Header() {
         <Logo className="hidden md:block mt-1 ms-6 me-11 w-23 h-7.5" />
       </Link>
       <div className="w-full">
-        <SearchBar  />
+        <SearchBar />
       </div>
     </header>
   );

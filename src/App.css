@@ -240,17 +240,11 @@
   .col-end-13 {
     grid-column-end: 13;
   }
-  .row-start-1 {
-    grid-row-start: 1;
-  }
   .row-start-2 {
     grid-row-start: 2;
   }
   .row-start-3 {
     grid-row-start: 3;
-  }
-  .row-end-2 {
-    grid-row-end: 2;
   }
   .row-end-3 {
     grid-row-end: 3;
@@ -278,9 +272,6 @@
     @media (width >= 73.125rem) {
       max-width: 73.125rem;
     }
-  }
-  .-mx-2 {
-    margin-inline: calc(var(--spacing) * -2);
   }
   .mx-1 {
     margin-inline: calc(var(--spacing) * 1);
@@ -317,9 +308,6 @@
   }
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
-  }
-  .mt-1\.5 {
-    margin-top: calc(var(--spacing) * 1.5);
   }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
@@ -530,9 +518,6 @@
   }
   .max-w-\[calc\(100\%-24px\)\] {
     max-width: calc(100% - 24px);
-  }
-  .max-w-fit {
-    max-width: fit-content;
   }
   .max-w-full {
     max-width: 100%;
@@ -882,9 +867,6 @@
   .text-\[13px\] {
     font-size: 13px;
   }
-  .text-\[22px\] {
-    font-size: 22px;
-  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -1069,11 +1051,6 @@
       padding-inline: calc(var(--spacing) * 7);
     }
   }
-  .sm\:col-start-8 {
-    @media (width >= 40rem) {
-      grid-column-start: 8;
-    }
-  }
   .sm\:col-end-8 {
     @media (width >= 40rem) {
       grid-column-end: 8;
@@ -1099,26 +1076,9 @@
       width: auto;
     }
   }
-  .sm\:border-s {
-    @media (width >= 40rem) {
-      border-inline-start-style: var(--tw-border-style);
-      border-inline-start-width: 1px;
-    }
-  }
-  .sm\:border-b-0 {
-    @media (width >= 40rem) {
-      border-bottom-style: var(--tw-border-style);
-      border-bottom-width: 0px;
-    }
-  }
   .sm\:px-8\.5 {
     @media (width >= 40rem) {
       padding-inline: calc(var(--spacing) * 8.5);
-    }
-  }
-  .sm\:ps-5 {
-    @media (width >= 40rem) {
-      padding-inline-start: calc(var(--spacing) * 5);
     }
   }
   .md\:block {
@@ -1139,11 +1099,6 @@
   .lg\:col-start-2 {
     @media (width >= 64rem) {
       grid-column-start: 2;
-    }
-  }
-  .lg\:col-start-9 {
-    @media (width >= 64rem) {
-      grid-column-start: 9;
     }
   }
   .lg\:col-end-9 {

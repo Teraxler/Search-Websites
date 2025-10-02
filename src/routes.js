@@ -1,36 +1,26 @@
 import { lazy } from "react";
-const Main = lazy(() => import("./pages/Main/Main"));
+const MainPage = lazy(() => import("./pages/Main/MainPage"));
 const NewsPage = lazy(() => import("./pages/News/NewsPage"));
-const Results = lazy(() => import("./pages/Results/Results"));
-const NewsByCategoryPage = lazy(() => import("./pages/News/NewsPageCategory"));
+const ResultsPage = lazy(() => import("./pages/Results/ResultsPage"));
 
 export const routes = [
   {
     path: "/",
-    element: <Main />,
+    element: <MainPage />,
   },
   {
     path: "/results",
     children: [
-      { index: true, element: <Main /> },
-      { path: ":type/:q", element: <Results /> },
+      { index: true, element: <MainPage /> },
+      { path: ":type/:q", element: <ResultsPage /> },
     ],
   },
   {
-    path: "/khabar",
-    children: [
-      {
-        index: true,
-        element: <NewsPage />,
-      },
-      {
-        path: ":cat",
-        element: <NewsByCategoryPage />,
-      },
-    ],
+    path: "/khabar/:cat?",
+    element: <NewsPage />,
   },
   {
     path: "/*",
-    element: <Main />,
+    element: <MainPage />,
   },
 ];

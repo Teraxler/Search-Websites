@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function NewsSection({ title, children }) {
   return (
     <section className="p-4 shadow-md bg-white rounded">

@@ -4,8 +4,6 @@ import ImageGalery from "../../components/ImageGalery/ImageGalery";
 import Loader from "../../components/Loader/Loader";
 import { numberGenerator } from "../../utils/numberMethods";
 import SkeletonImageGalery from "../../components/ImageGalery/SkeletonImageGalery";
-import ResultHeader from "./ResultsHeader/ResultsHeader";
-import Footer from "../../components/Footer/Footer";
 import {
   API_CX,
   API_KEY,
@@ -13,13 +11,10 @@ import {
   MAX_NUMBER_OF_IMAGES as MAX_RESULT,
 } from "../../services/constant";
 import useFetch from "../../hooks/useFetch";
-// import searchResult from "../../../data/search-images.json";
-// import searchResult from "../../data/google-search.json";
-// import useLogger from "../../hooks/useLogger";
 
 export default function ImageResults() {
   const params = useParams();
-
+  console.count("ImageResults Render");
   const loaderContainerRef = useRef(null);
   const observerRef = useRef(null);
 
@@ -34,10 +29,10 @@ export default function ImageResults() {
   useEffect(() => {
     observerRef.current = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        entry.isIntersecting &&
-          setCurrentPage((prevValue) =>
-            isLastPage ? prevValue : prevValue + 1
-          );
+        if (entry.isIntersecting && !isLastPage) {
+          setCurrentPage((prevValue) => prevValue + 1);
+          setStartPoint((prevValue) => prevValue + MAX_RESULT);
+        }
       });
     });
   }, []);
@@ -53,49 +48,41 @@ export default function ImageResults() {
     setStartPoint(1);
   }, [params.q]);
 
-  useEffect(
-    () => setStartPoint(currentPage * MAX_RESULT - MAX_RESULT + 1),
-    [currentPage]
-  );
-
   useEffect(() => {
-    if (result?.items == null && currentPage !== 1) {
+    if (result == null) return;
+
+    if (result.items == null && currentPage !== 1) {
       setIsLastPage(true);
       return;
     }
 
     currentPage === 1
-      ? setImages(result?.items)
-      : setImages((prevImages) => [...prevImages, ...result?.items]);
+      ? setImages(result.items)
+      : setImages((prevImages) => [...prevImages, ...result.items]);
   }, [result]);
 
   return (
     <>
-      <ResultHeader />
-      <main>
-        <section className="flex flex-wrap justify-start gap-5 p-5">
-          {images?.length
-            ? images.map((image) => (
-                <ImageGalery key={image.title + image.link} {...image} />
-              ))
-            : numberGenerator(0, MAX_RESULT).map((id) => (
-                <SkeletonImageGalery key={id} />
-              ))}
+      <section className="flex flex-wrap justify-start gap-5 p-5">
+        {images?.length
+          ? images.map((image) => (
+              <ImageGalery key={image.title + image.link} {...image} />
+            ))
+          : numberGenerator(0, MAX_RESULT).map((id) => (
+              <SkeletonImageGalery key={id} />
+            ))}
 
-          {isResultLoaded && !isLastPage ? (
-            <div
-              className="flex items-center justify-center w-full h-45"
-              ref={loaderContainerRef}
-            >
-              <Loader className="border-[#474554]" />
-            </div>
-          ) : (
-            ""
-          )}
-        </section>
-      </main>
-
-      <Footer />
+        {isResultLoaded && !isLastPage ? (
+          <div
+            className="flex items-center justify-center w-full h-45"
+            ref={loaderContainerRef}
+          >
+            <Loader className="border-[#474554]" />
+          </div>
+        ) : (
+          ""
+        )}
+      </section>
     </>
   );
 }

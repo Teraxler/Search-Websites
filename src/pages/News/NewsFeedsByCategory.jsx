@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import NewsHeader from "./NewsHeader/NewsHeader";
 import NewsSection from "./NewsSection/NewsSection";
-import Footer from "../../components/Footer/Footer";
 import useFetchFeeds from "../../hooks/useFetchFeeds";
 import NewsTitle from "../../components/NewsTitle/NewsTitle";
 import NewsItem from "../../components/NewsItem/NewsItem";
@@ -14,9 +12,9 @@ import Skeleton from "@mui/material/Skeleton";
 import Pagination from "../../components/Pagination/Pagination";
 import { MAX_NUMBER_OF_NEWS as MAX_NEWS } from "../../services/constant";
 import categories from "../../data/newsCategories.json";
+import { scrollToTop } from "../../utils/windowMethods";
 
-export default function NewsByCategoryPage() {
-  const { cat } = useParams();
+export default function NewsFeedsByCategory({ cat }) {
   const [webFeeds] = useFetchFeeds(rssFeedLinks[cat]);
   const [currentPage, setCurrentPage] = useState(1);
   const [currentPageFeeds, setCurrentPageFeeds] = useState([]);
@@ -39,15 +37,11 @@ export default function NewsByCategoryPage() {
     setCurrentPage(newPage);
     setIsContentLoaded(false);
 
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    scrollToTop();
   }
 
   return (
     <>
-      <NewsHeader />
       <div className="container mx-auto flex flex-col-reverse lg:flex-row gap-4 p-4">
         <main className="flex flex-col gap-y-4 flex-2">
           <NewsSection title={categoryTitle}>
@@ -77,7 +71,6 @@ export default function NewsByCategoryPage() {
           onChange={navigateHandler}
         />
       </div>
-      <Footer />
     </>
   );
 }

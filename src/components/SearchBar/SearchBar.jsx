@@ -18,7 +18,8 @@ export default function SearchBar() {
 
     if (searchValue.trim()) {
       timeoutId = setTimeout(async () => {
-        setSuggestions(await getAutoCompeleteSuggestions(searchValue));
+        const result = await getAutoCompeleteSuggestions(searchValue);
+        setSuggestions(result);
         // setSuggestions(searchResult.suggestions);
       }, 250);
     } else {

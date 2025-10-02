@@ -2,7 +2,7 @@ import SearchBar from "../../components/SearchBar/SearchBar";
 import Footer from "../../components/Footer/Footer";
 import Logo from "../../components/Logo/Logo";
 
-export default function Main() {
+export default function MainPage() {
   return (
     <>
       <header className="h-15.5"></header>
